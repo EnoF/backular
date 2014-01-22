@@ -1,0 +1,20 @@
+{
+    "name": "package",
+    "version": "0.1.0",
+    "dependencies": {
+        "json3": "~3.2.4",
+        "es5-shim": "~2.1.0"<% if(angular) { %>,
+        "angular": "~1.2.1",
+        "angular-route": "~1.2.1"<% } %><% if(backbone) { %>,
+        "backbone": "~1.1.0",
+        "underscore": "~1.5.2"<% } %><% if(less) { %>,
+        "less": "~1.5.0"<% } %>
+    },
+    "devDependencies": {
+        <% if(angular) { %>
+        "angular-mocks": "~1.0.7",
+        "angular-scenario": "~1.0.7"
+        <% } %>
+    }
+}
+
